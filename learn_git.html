@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">     <!--引入bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet">
+    <title>Spring Boot开发入门</title>
+</head>
+<body>
+<#-- FreeMarker注释方式1 -->
+<h1>${title!}</h1>
+<!-- FreeMarker注释方式2-->
+<h3> 时间戳转换成日期格式：${date?number_to_datetime}<br>
+    日期格式：${datetime?date}<br> 日期+时间格式：${datetime?datetime}<br></h3> <h5>     <#if user??>     姓名：${user.name!}
+        <br>     年龄：${user.age!}<br>     地址：${user.address!}<br>     </#if> <br></h5>
+<script src="../js/bootstrap.min.js" rel="stylesheet"></script> <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="../js/jquery.min.js" rel="stylesheet"></script>
+</body>
+</html>
